@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
   resources :residents, except: %i[new edit]
-  resources :towns, except: %i[new edit]
+  resources :towns, except: %i[new edit update] #no PATCH is allowed!
   # RESTful routes
   resources :examples, except: %i[new edit]
 
