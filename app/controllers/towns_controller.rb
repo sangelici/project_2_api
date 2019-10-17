@@ -1,4 +1,4 @@
-class TownsController < ApplicationController
+class TownsController < ProtectedController
   before_action :set_town, only: [:show, :update, :destroy]
 
   # GET /towns
@@ -46,6 +46,6 @@ class TownsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def town_params
-      params.require(:town).permit(:name, :town_fruit, :mayor)
+      params.require(:town).permit(:name, :town_fruit, :mayor, :user_id)
     end
 end
