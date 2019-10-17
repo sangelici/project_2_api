@@ -1,9 +1,9 @@
-class ResidentsController < ApplicationController
+class ResidentsController < ProtectedController
   before_action :set_resident, only: [:show, :update, :destroy]
 
   # GET /residents
   def index
-    @residents = Resident.all
+    @residents = current_user.residents
 
     render json: @residents
   end
@@ -15,7 +15,7 @@ class ResidentsController < ApplicationController
 
   # POST /residents
   def create
-    @resident = Resident.new(resident_params)
+    @resident = current_user.residents.build(resident_params)
 
     if @resident.save
       render json: @resident, status: :created, location: @resident
@@ -41,11 +41,11 @@ class ResidentsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_resident
-      @resident = Resident.find(params[:id])
+      @resident = current_user.residents.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def resident_params
-      params.require(:resident).permit(:name, :animal_type, :birthday, :hobby)
+      params.require(:resident).permit(:name, :animal_type, :birthday, :hobby, :town_id)
     end
 end
