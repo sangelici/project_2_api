@@ -6,5 +6,3 @@ class User < ApplicationRecord
   has_many :towns
   has_many :residents, through: :town
 end
-
-#user has_many res through town - user model
