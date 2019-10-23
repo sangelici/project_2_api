@@ -64,10 +64,10 @@ Note: I did not reach the point of implementing the front-end functionality for 
 
 <img src="erd.png"
      alt="Animal Crossing API Entity Relationship Diagram"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px;"/>
 <img src="wireframe.png"
      alt="Animal Crossing API Entity Relationship Diagram"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px;" >
 <img src="wireframe_2.png"
      alt="Animal Crossing API Entity Relationship Diagram"
      style="float: left; margin-right: 10px;" />
