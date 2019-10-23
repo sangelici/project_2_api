@@ -7,7 +7,7 @@ My Animal Crossing Town Builder is a single page application that utilized an AP
 - [Animal Crossing Town Builder](https://sangelici.github.io/AC-Town-Builder-Client/)
 - [Animal Crossing Town Builder: Heroku API](https://salty-scrubland-96340.herokuapp.com/)
 
-# Link to API repository
+# Link to Front-End repository
 
 [Animal Crossing Town Builder: REPO](https://github.com/sangelici/AC-Town-Builder-Client)
 
